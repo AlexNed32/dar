@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;700&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Montserrat', sans-serif;
+    --headers-font: 'Comfortaa', cursive;
+    --main-color: #1b6e83;
+    --main-color-10a: #1b6e83;
+    --heavenly: #d3ebf3;
+    --light-beige: #f9efe8;
+    --coral: #d45215;
+    --herbal: #b3b32a;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, var(--main-font);
+  font-weight: 400;
+  color: var(--main-color);
+  background-color: var(--heavenly);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--headers-font);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Servaces */
+@media (width <= 900px) {
+
+    .menu_icon {
+        stroke: var(--main-color);
+    }
+
+    .menu_icon:hover {
+        stroke: var(--coral);
+    }
+
+    .menu_icon__menu,
+    .menu_button__open .menu_icon__cross {
+        display: block;
+    }
+
+    .menu_icon__cross,
+    .menu_button__open .menu_icon__menu {
+        display: none;
+    }
+}
+
+/* Cta button */
+
+.cta {
+    border: none;
+    background-color: var(--main-color);
+    color: var(--heavenly);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.cta:hover {
+    background-color: var(--coral);
+}
+
+
+/* Wrapper */
+
+@media (width > 1300px) {
+    .wrapper {
+        position: relative;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}

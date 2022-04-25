@@ -1,0 +1,241 @@
+/* Header */
+.header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: grid;
+}
+
+
+
+@media (width <= 736px) {
+    .header {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .header_menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (width >= 736px) {
+    .header {
+        padding-right: 20px;
+        padding-left: 20px;
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+    }
+
+    .header_menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+/* Menu */
+
+@media (width <= 736px) {
+    .menu {
+        display: grid;
+    }
+}
+
+@media (width >= 736px) {
+    .menu {
+        display: grid;
+        margin-top: 20px;
+    }
+}
+
+/* Button */
+
+@media (width <= 736px) {
+    .menu_button {
+        z-index: 5;
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        justify-self: end;
+        padding-top: 24px;
+        padding-right: 16px;
+    }
+}
+
+@media (width >= 736px) {
+    .menu_button {
+        display: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+
+/* List */
+
+.menu_list {
+    margin: 0;
+    padding: 0;
+}
+
+@media (width <= 736px) {
+    .menu_list {
+        display: none;
+        row-gap: 8px;
+        padding-top: 12px;
+        padding-bottom: 24px;
+        padding-left: 48px;
+        box-shadow: 0 50vh 0 50vh var(--main-color-10a);
+    }
+
+    .menu_list__open{
+        display: grid;
+        background-color: var(--heavenly);
+        z-index: 4;
+    }
+}
+
+@media (width >= 736px) {
+    .menu_list {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 8px ;
+        grid-template-areas: '. contacts contacts'
+                             'services services services';
+        padding-right: 20px;
+        padding-left: 20px;
+        grid-template-columns: 250px 1fr 1fr;
+    }
+
+    .menu_item {
+        text-align: center;
+    }
+
+
+
+    .menu_item:hover .menu_link{
+        background-color: var(--main-color);
+        color: white;
+    }
+}
+
+@media (width >= 1000px){
+    .menu_link {
+        padding: 10px 15px;
+    }
+}
+
+
+/* Services */
+
+@media (width >= 736px) {
+    .services {
+        display: grid;
+        grid-area: services;
+    }
+
+    .services_title {
+        display: none;
+    }
+
+    .services_list {
+        /* display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        grid-template-columns: repeat(7,auto);
+        column-gap: 15px;
+        align-items: center; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .services_link {
+
+    }
+
+}
+
+
+/* Contacts */
+
+@media (width >= 736px) {
+    .menu_contacts {
+        display: grid;
+        grid-area: contacts;
+        justify-content: space-between;
+        grid-template-columns: 1fr min-content;
+    }
+
+    .menu_contacts_title {
+        display: none;
+    }
+
+    .menu_contacts_list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu_contacts_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_contacts_phone {
+        font-weight: 600;
+        position: relative;
+        padding-left: 25px;
+    }
+
+    .menu_contacts_phone::before {
+        content: url(../public/images/phone.svg);
+        width: 18px;
+        height: 18px;
+        display: block;
+        fill: var(--main-color);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .menu_contacts_adress {
+        display: none;
+    }
+}
+
+@media (width >= 1000px) {
+    .menu_contacts_adress {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+    }
+
+    .menu_contacts_adress::before {
+        content: url(../public/images/location.svg);
+        width: 16px;
+        height: 16px;
+        display: block;
+        fill: var(--main-color);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+}
+
+/* Button */
+
+@media (width >= 736px) {
+    .header_brn{
+
+    }
+}

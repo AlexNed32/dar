@@ -1,0 +1,45 @@
+/* Logo */
+
+.logo {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 8px;
+    max-width: 215px;
+    line-height: 1;
+}
+
+@media (width <= 320px) {
+    .header_logo{
+        z-index: 5;
+    }
+}
+
+/* Image */
+
+.logo_img {
+    grid-row: span 2;
+    position: relative;
+    width: 75px;
+    /* height: 65px; */
+}
+
+.full-bleed {
+	width: 100%;
+	grid-column: 1 / -1;
+}
+
+/* Title */
+
+.logo_title {
+    margin: 0;
+    font-family: var(--headers-font);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/* Tagline */
+
+.logo_tagline {
+    margin: 0;
+    text-align: end;
+}
