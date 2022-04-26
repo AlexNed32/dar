@@ -1,0 +1,87 @@
+/* Achievements */
+
+@media (width <= 736px) {
+    .achievements {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (width >= 736px) {
+    .achievements {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* List */
+
+.achievements_list {
+    display: grid
+}
+
+@media (width <= 736px) {
+    .achievements_list {
+        align-items: center;
+        align-content: center;
+        row-gap: 10px;
+        padding-right: 16px;
+        padding-left: 16px;
+        max-width: 375px;
+        margin: 0 auto;
+    }
+}
+
+@media (width >= 736px) {
+    .achievements_list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Item */
+
+.achievements_item {
+    text-align: center;
+}
+
+@media (width <= 736px) {
+    .achievements_item {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (width >= 736px) {
+    .achievements_item {
+        display: grid;
+        align-content: center;
+        row-gap: 10px;
+        font-size: 20px;
+    }
+}
+
+/* Image */
+
+@media (width <= 736px) {
+    .achievements_img {
+
+    }
+}
+
+/* Text */
+
+@media (width <= 736px) {
+    .achievements_text {
+
+    }
+}
+
+/* Couter */
+
+@media (width <= 736px) {
+    .achievements_couter {
+
+    }
+}

@@ -2,8 +2,8 @@ import styles from '../styles/Specialist.module.css';
 
 import Specialists from '../components/Specialists';
 
-export const getStaticProps = async () => {
-    const response = await fetch('http://localhost:3000/api/specialists');
+export const getServerSideProps = async () => {
+    const response = await fetch(`${process.env.API_URL}/specialists`);
     const data = await response.json();
 
     if (!data) {

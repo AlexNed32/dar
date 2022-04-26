@@ -1,5 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
+import Achievements from '../components/Achievements';
+import Services from '../components/Services';
 
 
 export default function Home() {
@@ -21,13 +23,16 @@ export default function Home() {
                 <div className={styles.main_img}>
                     <Image
                         src="/images/slider/1.jpg"
-                        layout="responsive"
+                        layout="fill"
                         height="68vw"
                         width="100vw"
+                        objectFit="cover"
                     />
                 </div>
 
             </section>
+            <Achievements />
+            <Services />
         </main>
     </div>
   )

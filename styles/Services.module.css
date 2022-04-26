@@ -1,0 +1,98 @@
+/* Services */
+
+@media (width >= 736px) {
+    .services {
+
+    }
+}
+
+/* Title */
+
+@media (width >= 736px) {
+    .services_title {
+        background-color: var(--main-color);
+        text-align: center;
+        font-size: 25px;
+        line-height: 1.5;
+        color: white;
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* List */
+
+@media (width >= 736px) {
+    .services_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+}
+
+/* Item */
+
+@media (width >= 736px) {
+    .services_item {
+        display: grid;
+        grid-template-rows: 120px 230px 1fr;
+        background-color: var(--light-beige);
+        border-radius: 10px;
+        box-shadow: 0 3px 6px var(--main-color-10a);
+        row-gap: 30px;
+    }
+}
+
+/* Image */
+
+.services_img {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    /* box-shadow: 0 3px 6px var(--main-color-10a); */
+}
+
+.services_image {
+    border-radius: 10px;
+}
+
+@media (width >= 736px) {
+    .services_img {
+
+    }
+}
+
+
+/* Text */
+
+@media (width >= 736px) {
+    .services_text {
+        padding: 0 20px;
+        overflow: auto;
+    }
+}
+
+/* Buttons */
+
+@media (width >= 736px) {
+    .services_buttons {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Btn */
+
+@media (width >= 736px) {
+    .services_btn {
+        background-color: var(--heavenly);
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
+    .services_btn:hover {
+        background-color: var(--main-color);
+        color: white;
+    }
+}
