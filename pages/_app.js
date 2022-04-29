@@ -1,4 +1,4 @@
-import Layout from '../Components/Layout';
+import Layout from '../components/Layout';
 import '../styles/grid.css';
 import '../styles/globals.css';
 

@@ -2,11 +2,23 @@
 
 @media (width >= 736px) {
     .services {
-
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 /* Title */
+
+@media (width <= 736px) {
+    .services_title {
+        background-color: var(--main-color);
+        text-align: center;
+        line-height: 1.5;
+        color: white;
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+}
 
 @media (width >= 736px) {
     .services_title {
@@ -22,24 +34,51 @@
 
 /* List */
 
+@media (width <= 736px) {
+    .services_list {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: grid;
+        row-gap: 20px;
+    }
+}
+
 @media (width >= 736px) {
     .services_list {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (width >= 1000px) {
+    .services_list {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
+        gap: 20px;
     }
 }
 
 /* Item */
 
+@media (width <= 736px) {
+    .services_item {
+        display: block;
+        position: relative;
+        border-radius: 10px;
+    }
+}
+
 @media (width >= 736px) {
     .services_item {
         display: grid;
-        grid-template-rows: 120px 230px 1fr;
+        min-height: 300px;
+        /* grid-template-rows: 300px; */
         background-color: var(--light-beige);
-        border-radius: 10px;
         box-shadow: 0 3px 6px var(--main-color-10a);
         row-gap: 30px;
+        position: relative;
+        border-radius: 10px;
     }
 }
 
@@ -49,11 +88,43 @@
     display: block;
     position: relative;
     border-radius: 10px;
-    /* box-shadow: 0 3px 6px var(--main-color-10a); */
 }
 
-.services_image {
-    border-radius: 10px;
+@media (width <= 736px) {
+    .services_img {
+        height: 100px;
+    }
+
+    .services_image {
+        border-radius: 10px;
+    }
+}
+
+@media (width >= 736px) {
+
+    .services_img::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.7;
+        transition: all 1s;
+        border-radius: 10px;
+    }
+
+    .services_item:hover .services_img::before  {
+        background: linear-gradient(180deg, transparent 10%, var(--main-color-10a) 50%, var(--main-color));
+    }
+
+    .services_image {
+        border-radius: 10px;
+    }
 }
 
 @media (width >= 736px) {
@@ -65,34 +136,100 @@
 
 /* Text */
 
-@media (width >= 736px) {
+.services_text {
+    cursor: pointer;
+}
+
+@media (width <= 736px) {
     .services_text {
-        padding: 0 20px;
-        overflow: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        color: var(--main-color);
+        background-color: white;
+        font-size: 16px;
+        border: 1px solid var(--main-color);
+        border-radius: 10px;
+        padding: 10px 5px;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+        transition: all 0.5s;
+        line-height: 1.2;
     }
 }
+
+@media (width >= 736px) {
+    .services_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        color: var(--main-color);
+        background-color: white;
+        font-size: 20px;
+        border: 1px solid var(--main-color);
+        border-radius: 10px;
+        padding: 15px 25px;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+        transition: all 0.5s;
+        line-height: 1.2;
+    }
+
+    /* .services_item:hover .services_text {
+        top: calc(60% - 20px);
+
+    } */
+
+    .services_text:hover {
+        color: white;
+        background-color: var(--coral);
+        border: 1px solid white;
+    }
+}
+
+/* @media (width >= 1000px) {
+    .services_item:hover .services_text {
+        top: calc(100% - 100px);
+    }
+} */
 
 /* Buttons */
 
-@media (width >= 736px) {
-    .services_buttons {
-        padding: 30px 0;
-        display: flex;
-        justify-content: space-around;
+@media (width <= 736px) {
+    .services_btn {
+        display: none;
     }
 }
 
-/* Btn */
-
 @media (width >= 736px) {
     .services_btn {
-        background-color: var(--heavenly);
+        background-color: white;
         color: var(--main-color);
         cursor: pointer;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: 3;
+        font-size: 25px;
+        opacity: 0;
+        transition: all 0.5s;
+        width: 80%;
+        padding: 15px 25px;
+        border: 1px solid transparent;
+    }
+
+    .services_item:hover .services_btn {
+        bottom: 20px;
+        opacity: 1;
+        border: 1px solid white;
     }
 
     .services_btn:hover {
-        background-color: var(--main-color);
         color: white;
     }
 }
