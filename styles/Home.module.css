@@ -42,6 +42,7 @@
         margin: 0 auto;
         padding-right: 16px;
         padding-left: 16px;
+        justify-items: start;
     }
 }
 
@@ -102,7 +103,7 @@
 
 @media (width <= 736px) {
     .main_btn {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 

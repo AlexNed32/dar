@@ -89,15 +89,24 @@
         display: none;
         row-gap: 8px;
         padding-top: 12px;
-        padding-bottom: 24px;
-        padding-left: 48px;
+        padding-bottom: 12px;
+        padding-left: 16px;
         box-shadow: 0 50vh 0 50vh var(--main-color-10a);
+
+        transition: all 10s;
     }
 
     .menu_list__open{
         display: grid;
         background-color: var(--heavenly);
         z-index: 4;
+        margin-top: 30px;
+
+        transition: all 10s;
+    }
+
+    .menu_list.menu_list__open {
+
     }
 }
 
@@ -247,8 +256,8 @@
 
 /* Button */
 
-@media (width >= 736px) {
+@media (width <= 736px) {
     .header_brn{
-
+        margin-top: 10px;
     }
 }
