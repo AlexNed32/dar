@@ -52,7 +52,7 @@ const Services = () => {
                             className={styles.services_image}
                         />
                     </div>
-                    <p className={styles.services_text}>Стаціонарне відділення </p>
+                    <p className={styles.services_text}>Стаціонар </p>
                     <Link href="/" >
                         <a className={styles.services_link}>Дізнатись більше</a>
                     </Link>
@@ -61,7 +61,7 @@ const Services = () => {
                 <li className={styles.services_item}>
                     <div className={styles.services_img}>
                         <Image
-                            src="/images/services/узд.jpg"
+                            src="/images/services/рентген.jpg"
                             width="100vw"
                             heigth="100vw"
                             layout='fill'
@@ -69,7 +69,7 @@ const Services = () => {
                             className={styles.services_image}
                         />
                     </div>
-                    <p className={styles.services_text}>УЗД </p>
+                    <p className={styles.services_text}>Рентген </p>
                     <Link href="/" >
                         <a className={styles.services_link}>Дізнатись більше</a>
                     </Link>
@@ -78,7 +78,7 @@ const Services = () => {
                 <li className={styles.services_item}>
                     <div className={styles.services_img}>
                         <Image
-                            src="/images/services/кардіологія.jpg"
+                            src="/images/services/хірургія.jpg"
                             width="100vw"
                             heigth="84vw"
                             layout='fill'
@@ -86,7 +86,7 @@ const Services = () => {
                             className={styles.services_image}
                         />
                     </div>
-                    <p className={styles.services_text}>Кардіологія </p>
+                    <p className={styles.services_text}>Хірургія </p>
                     <Link href="/" >
                         <a className={styles.services_link}>Дізнатись більше</a>
                     </Link>
@@ -95,7 +95,7 @@ const Services = () => {
                 <li className={styles.services_item}>
                     <div className={styles.services_img}>
                         <Image
-                            src="/images/services/стаціонар.jpg"
+                            src="/images/services/діагностика.jpg"
                             width="100vw"
                             heigth="84vw"
                             layout='fill'
@@ -103,7 +103,7 @@ const Services = () => {
                             className={styles.services_image}
                         />
                     </div>
-                    <p className={styles.services_text}>Стаціонарне відділення </p>
+                    <p className={styles.services_text}>Діагностика </p>
                     <Link href="/" >
                         <a className={styles.services_link}>Дізнатись більше</a>
                     </Link>

@@ -1,0 +1,184 @@
+/* Marketing */
+
+@media (width <= 736px) {
+    .marketing {
+        display: grid;
+        grid-template-areas: "tagline tagline"
+                                "phone button"
+                                "duration duration";
+        /* grid-template-columns: 1fr 1fr; */
+        margin-top: 40px;
+        background-color: var(--main-color);
+        padding: 20px 16px;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+}
+
+@media (width >= 736px) {
+    .marketing {
+        margin-top: 40px;
+        background-color: var(--main-color);
+        display: grid;
+        grid-template-areas: "img tagline tagline tagline"
+                             "img phone button button"
+                             "img . duration duration";
+        grid-template-columns: repeat(4, 1fr) ;
+    }
+}
+
+/* Image */
+@media (width <= 736px) {
+    .marketing_img {
+        display: none;
+    }
+}
+
+@media (width >= 736px) {
+    .marketing_img {
+        grid-area: img;
+        grid-row: span 3;
+        display: block;
+        position: relative;
+        height: 30vw;
+    }
+}
+
+/* Tagline */
+
+@media (width <= 736px) {
+    .marketing_tagline {
+        color: white;
+        font-size: 14px;
+        line-height: 1.2;
+        grid-area: tagline;
+    }
+}
+
+@media (width >= 736px) {
+    .marketing_tagline {
+        grid-area: tagline;
+        color: white;
+        font-size: 19px;
+        line-height: 1.2;
+        display: grid;
+        align-items: end;
+        align-content: end;
+    }
+}
+
+@media (width >= 1000px) {
+    .marketing_tagline {
+        font-size: 25px;
+    }
+}
+
+@media (width >= 1300px) {
+    .marketing_tagline {
+        font-size: 32px;
+    }
+}
+
+/* Phones */
+
+@media (width <= 736px) {
+    .marketing_phones {
+        color: white;
+        grid-area: phone;
+   }
+}
+
+@media (width >= 736px) {
+    .marketing_phones {
+        grid-area: phone;
+        color: white;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        font-size: 15px;
+    }
+
+    .marketing_phones_item {
+        margin-left: 36px;
+        position: relative;
+        padding: 12px;
+    }
+
+    .marketing_phones_item::before {
+        content: url("../public/images/marketing_phone.svg");
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        transform: translateY(-50%);
+    }
+
+}
+@media (width >= 1000px) {
+    .marketing_phones {
+        font-size: 24px;
+    }
+}
+
+/* Button */
+
+@media (width <= 736px) {
+    .marketing_btn {
+        grid-area: button;
+        background-color: var(--heavenly);
+        color: var(--main-color);
+        align-self: center;
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+}
+
+@media (width >= 736px) {
+    .marketing_btn {
+        grid-area: button;
+        background-color: var(--heavenly);
+        color: var(--main-color);
+        align-self: center;
+        width: 90%;
+        padding: 1em;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+}
+
+
+@media (width >= 1000px) {
+    .marketing_btn {
+        padding: 21px 0;
+        font-size: 24px;
+    }
+}
+/* Duration */
+
+@media (width <= 736px) {
+    .marketing_duration {
+        grid-area: duration;
+        color: white;
+        font-size: 14px;
+        align-self: center;
+    }
+}
+
+@media (width >= 736px) {
+    .marketing_duration {
+        grid-area: duration;
+        color: white;
+        font-size: 14px;
+        align-self: center;
+        text-align: end;
+        margin-right: 20px;
+    }
+}
+
+@media (width >= 1000px) {
+    .marketing_duration {
+        margin-right: 40px;
+    }
+}

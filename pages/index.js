@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image';
 import Achievements from '../components/Achievements';
 import Services from '../components/Services';
+import Marketing from '../components/Marketing';
 
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
             </section>
             <Achievements />
             <Services />
+            <Marketing />
         </main>
     </div>
   )
