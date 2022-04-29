@@ -18,7 +18,10 @@ const Services = () => {
                             className={styles.services_image}
                         />
                     </div>
-                    <p className={styles.services_text}>УЗД </p>
+                    <p className={styles.services_text}>УЗД</p>
+                    <Link href="/" >
+                        <a className={styles.services_link}>Дізнатись більше</a>
+                    </Link>
                     <button type="button" className={[styles.services_btn, 'cta'].join(' ')}>OnLine Запис</button>
                 </li>
                 <li className={styles.services_item}>
@@ -33,6 +36,9 @@ const Services = () => {
                         />
                     </div>
                     <p className={styles.services_text}>Кардіологія </p>
+                    <Link href="/" >
+                        <a className={styles.services_link}>Дізнатись більше</a>
+                    </Link>
                     <button type="button" className={[styles.services_btn, 'cta'].join(' ')}>OnLine Запис</button>
                 </li>
                 <li className={styles.services_item}>
@@ -47,6 +53,9 @@ const Services = () => {
                         />
                     </div>
                     <p className={styles.services_text}>Стаціонарне відділення </p>
+                    <Link href="/" >
+                        <a className={styles.services_link}>Дізнатись більше</a>
+                    </Link>
                     <button type="button" className={[styles.services_btn, 'cta'].join(' ')}>OnLine Запис</button>
                 </li>
                 <li className={styles.services_item}>
@@ -61,6 +70,9 @@ const Services = () => {
                         />
                     </div>
                     <p className={styles.services_text}>УЗД </p>
+                    <Link href="/" >
+                        <a className={styles.services_link}>Дізнатись більше</a>
+                    </Link>
                         <button type="button" className={[styles.services_btn, 'cta'].join(' ')}>OnLine Запис</button>
                 </li>
                 <li className={styles.services_item}>
@@ -75,6 +87,9 @@ const Services = () => {
                         />
                     </div>
                     <p className={styles.services_text}>Кардіологія </p>
+                    <Link href="/" >
+                        <a className={styles.services_link}>Дізнатись більше</a>
+                    </Link>
                     <button type="button" className={[styles.services_btn, 'cta'].join(' ')}>OnLine Запис</button>
                 </li>
                 <li className={styles.services_item}>
@@ -89,6 +104,9 @@ const Services = () => {
                         />
                     </div>
                     <p className={styles.services_text}>Стаціонарне відділення </p>
+                    <Link href="/" >
+                        <a className={styles.services_link}>Дізнатись більше</a>
+                    </Link>
                     <button type="button" className={[styles.services_btn, 'cta'].join(' ')}>OnLine Запис</button>
                 </li>
             </ul>

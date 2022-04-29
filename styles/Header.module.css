@@ -131,6 +131,7 @@
     .menu_item:hover .menu_link{
         background-color: var(--main-color);
         color: white;
+        border-radius: 10px;
     }
 }
 

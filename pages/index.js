@@ -27,6 +27,7 @@ export default function Home() {
                         height="68vw"
                         width="100vw"
                         objectFit="cover"
+                        className={styles.main_image}
                     />
                 </div>
 
