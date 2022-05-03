@@ -1,0 +1,132 @@
+/* Container */
+@media (width >= 736px) {
+    .wrapper{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .container {
+        margin-top: 40px;
+    }
+
+}
+
+/* Title */
+
+@media (width <= 736px) {
+    .title {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+@media (width >= 1000px) {
+    .wrapper{
+        padding-right: 16px;
+        padding-left: 16px;
+        /* max-width: 80%; */
+        margin: 0 auto;
+    }
+}
+
+@media (width >= 1300px) {
+    .wrapper{
+        max-width: 100%;
+
+    }
+}
+
+/* List */
+.galerry_list {
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    justify-content: center;
+    /* padding-right: 16px;
+    padding-left: 16px; */
+}
+
+@media (width >= 750px) {
+    .galerry_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 1000px) {
+    .galerry_list {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+.specialist {
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: transform 1s, all 1s;
+    border-radius: 10px;
+}
+
+/* Specialist */
+
+.specialist_info{
+    transition: transform 1s, all 1s;
+    padding: 0 10px;
+}
+
+.specialist_name {
+    /* font-size: 30px; */
+    /* margin-bottom: 10px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (width <= 736px) {
+    .specialist_name {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media (width >= 736px) {
+    .specialist_name {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+}
+
+@media (width >= 1000px) {
+    .specialist_name {
+        font-size: 23px;
+        margin-top: 10px;
+        height: 80px;
+    }
+}
+
+.specialist_img {
+    display: block;
+    position: relative;
+    height: 27vw;
+    overflow: hidden;
+}
+
+@media (width <= 736px) {
+    .specialist_img {
+        height: 100vw;
+    }
+}
+
+@media (width >= 736px) {
+    .specialist_img {
+        height: 41vw;
+    }
+}
+
+.specialist_image {
+    /* position: absolute;
+    top: 20px; */
+}
+
+.specialist_exp, .accordion, .accordion_btn {
+    display: none;
+}
