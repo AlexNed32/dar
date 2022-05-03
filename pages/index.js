@@ -3,9 +3,25 @@ import Image from 'next/image';
 import Achievements from '../components/Achievements';
 import Services from '../components/Services';
 import Marketing from '../components/Marketing';
+import Specialists from '../components/Specialists';
 
+export const getServerSideProps = async () => {
+    const response = await fetch(`${process.env.API_URL}/specialists`);
+    const data = await response.json();
 
-export default function Home() {
+    if (!data) {
+        return{
+            notFound: true,
+        }
+    }
+
+    return {
+        props: { specialists: data},
+    }
+}
+
+export default function Home( specialists ) {
+
   return (
     <div className={styles.container}>
         <main>
@@ -36,6 +52,9 @@ export default function Home() {
             <Achievements />
             <Services />
             <Marketing />
+            <section className={styles.specialists}>
+                <Specialists data={specialists} />
+            </section>
         </main>
     </div>
   )
