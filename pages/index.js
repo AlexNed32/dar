@@ -26,7 +26,7 @@ export const getStaticProps = async () => {
     }
 }
 
-function Home( {specialists} ) {
+export default function Home( {specialists} ) {
 
   return (
     <div className={styles.container}>
