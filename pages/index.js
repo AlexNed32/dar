@@ -27,7 +27,7 @@ export const getServerSideProps = async () => {
 }
 
 export default function Home( specialists ) {
-
+    console.log(specialists)
   return (
     <div className={styles.container}>
         <main>
