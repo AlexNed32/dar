@@ -5,7 +5,7 @@ import Services from '../components/Services';
 import Marketing from '../components/Marketing';
 import Specialists from '../components/Specialists';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
     try{
         const response = await fetch(`${process.env.API_URL}/specialistsApi`);
         const data = await response.json();
