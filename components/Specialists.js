@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 
 const Specialists = ({ data }) => {
     const router = useRouter();
+    console.log(router)
     let expanded = false;
     const accordionOpen = '';
 

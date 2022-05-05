@@ -7,7 +7,7 @@ import Specialists from '../components/Specialists';
 
 export const getServerSideProps = async () => {
     try{
-        const response = await fetch(`${process.env.API_URL}/specialists`);
+        const response = await fetch(`${process.env.API_URL}/specialistsApi`);
         const data = await response.json();
 
         if (!data) {
