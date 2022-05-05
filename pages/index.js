@@ -9,7 +9,7 @@ export const getServerSideProps = async () => {
     try{
         const response = await fetch(`${process.env.API_URL}/specialistsApi`);
         const data = await response.json();
-
+        console.log('data', data)
         if (!data) {
             return{
                 notFound: true,
