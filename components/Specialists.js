@@ -4,13 +4,14 @@ import stylesMain from '../styles/SpecialistMain.module.css';
 import { useRouter } from 'next/router';
 
 
-const Specialists = ({ data }) => {
+const Specialists = ({ specialists }) => {
+    console.log(specialists)
     const router = useRouter();
 
     let expanded = false;
     const accordionOpen = '';
 
-    if (!data.specialists){
+    if (!specialists){
         return null
     }
 
@@ -29,7 +30,7 @@ const Specialists = ({ data }) => {
 
     return (
         <ul className={styles.galerry_list}>
-            {data.specialists && data.specialists.map(({ id, name, exp, qualification, image }) =>
+            {specialists && specialists.map(({ id, name, exp, qualification, image }) =>
                 <li className={router.pathname === '/' ? stylesMain.specialist : styles.specialist} key={id}>
                     <div className={router.pathname === '/' ? stylesMain.specialist_img : styles.specialist_img}>
                         <Image

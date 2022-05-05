@@ -17,14 +17,14 @@ export const getServerSideProps = async () => {
     }
 }
 
-const Specialist = ( specialists ) =>{
+const Specialist = ( {specialists} ) =>{
 
     return (
         <main className={styles.wrapper}>
             <div className={styles.container}>
                 <h1 className={styles.title}>Наші фахівці</h1>
                 <section className={styles.galerry}>
-                    <Specialists data={specialists} />
+                    <Specialists specialists={specialists} />
                 </section>
             </div>
         </main>

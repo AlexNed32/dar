@@ -5,7 +5,7 @@ import Services from '../components/Services';
 import Marketing from '../components/Marketing';
 import Specialists from '../components/Specialists';
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     try{
         const response = await fetch(`${process.env.API_URL}/specialistsApi`);
         const data = await response.json();
@@ -26,7 +26,7 @@ export const getStaticProps = async () => {
     }
 }
 
-export default function Home( {specialists} ) {
+const Home = ( {specialists} ) => {
 
   return (
     <div className={styles.container}>
@@ -60,9 +60,11 @@ export default function Home( {specialists} ) {
             <Marketing />
             <section className={styles.specialists}>
                 <h1>Hello</h1>
-                <Specialists data={specialists} />
+                <Specialists specialists={specialists} />
             </section>
         </main>
     </div>
   )
 }
+
+export default Home
