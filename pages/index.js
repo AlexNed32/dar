@@ -6,17 +6,23 @@ import Marketing from '../components/Marketing';
 import Specialists from '../components/Specialists';
 
 export const getServerSideProps = async () => {
-    const response = await fetch(`${process.env.API_URL}/specialists`);
-    const data = await response.json();
+    try{
+        const response = await fetch(`${process.env.API_URL}/specialists`);
+        const data = await response.json();
 
-    if (!data) {
-        return{
-            notFound: true,
+        if (!data) {
+            return{
+                notFound: true,
+            }
         }
-    }
 
-    return {
-        props: { specialists: data},
+        return {
+            props: { specialists: data},
+        }
+    } catch {
+        return {
+            props: { specialists: null}
+        }
     }
 }
 
