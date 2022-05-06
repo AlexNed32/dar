@@ -9,9 +9,11 @@ export const getStaticProps = async () => {
     try{
         const response = await fetch(`${process.env.API_URL}/specialistsApi`);
         const data = await response.json();
+
         console.log('data', data)
+
         if (!data) {
-            return{
+            return {
                 notFound: true,
             }
         }
@@ -22,6 +24,21 @@ export const getStaticProps = async () => {
     } catch {
         return {
             props: { specialists: []}
+        }
+    } finally {
+        const response = await fetch(`${process.env.API_URL}/specialistsApi`);
+        const data = await response.json();
+
+        console.log('data', data)
+
+        if (!data) {
+            return {
+                notFound: true,
+            }
+        }
+
+        return {
+            props: { specialists: data},
         }
     }
 }
