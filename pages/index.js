@@ -7,7 +7,7 @@ import Specialists from '../components/Specialists';
 
 export const getStaticProps = async () => {
     try{
-        const response = await fetch(`${process.env.API_URL}/specialistsApi`);
+        const response = await fetch(`${process.env.API_HOST}/specialistsApi`);
         const data = await response.json();
 
         console.log('data', data)
@@ -21,8 +21,10 @@ export const getStaticProps = async () => {
         return {
             props: { specialists: data},
         }
-    } catch(e) {
-        console.log(e)
+    } catch {
+        return {
+            props: { specialists: null},
+        }
     }
 }
 
@@ -59,7 +61,7 @@ const Home = ( {specialists} ) => {
             <Services />
             <Marketing />
             <section className={styles.specialists}>
-                <h1>Hello</h1>
+                <h2 className={styles.specialists_title}>Наші фахівці</h2>
                 <Specialists specialists={specialists} />
             </section>
         </main>
