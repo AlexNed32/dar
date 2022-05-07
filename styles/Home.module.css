@@ -156,3 +156,34 @@
         border-radius: 10px;
     }
 }
+
+/* Specialists */
+
+@media (width >= 736px) {
+    .specialists {
+       margin-top: 40px;
+    }
+}
+
+@media (width <= 736px) {
+    .specialists_title {
+        background-color: var(--main-color);
+        text-align: center;
+        line-height: 1.5;
+        color: white;
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (width >= 736px) {
+    .specialists_title {
+        background-color: var(--main-color);
+        text-align: center;
+        font-size: 25px;
+        line-height: 1.5;
+        color: white;
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+}

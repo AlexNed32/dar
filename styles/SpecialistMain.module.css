@@ -63,6 +63,9 @@
     padding-bottom: 16px;
     transition: transform 1s, all 1s;
     border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80%;
 }
 
 /* Specialist */
@@ -106,7 +109,7 @@
 .specialist_img {
     display: block;
     position: relative;
-    height: 27vw;
+    /* height: 27vw; */
     overflow: hidden;
 }
 
@@ -117,8 +120,14 @@
 }
 
 @media (width >= 736px) {
-    .specialist_img {
+    /* .specialist_img {
         height: 41vw;
+    } */
+}
+
+@media (width >= 1300px) {
+    .specialist_img {
+        height: 27vw;
     }
 }
 
