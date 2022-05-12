@@ -29,7 +29,7 @@ const Specialists = ({ specialists }) => {
     }
 
     return (
-        <ul className={styles.galerry_list}>
+        <ul className={router.pathname === '/' ? stylesMain.galerry_list : styles.galerry_list}>
             {specialists && specialists.map(({ id, name, exp, qualification, image }) =>
                 <li className={router.pathname === '/' ? stylesMain.specialist : styles.specialist} key={id}>
                     <div className={router.pathname === '/' ? stylesMain.specialist_img : styles.specialist_img}>
