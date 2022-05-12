@@ -1,4 +1,4 @@
-export const specialists = [
+export const services = [
     {
         id: 1,
         name: 'УЗД',

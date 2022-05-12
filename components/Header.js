@@ -2,6 +2,8 @@ import styles from "../styles/Header.module.css"
 import Link from 'next/link'
 import Logo from "./Logo";
 import { useState } from 'react';
+import { location } from "../pages/api/data/location";
+import { navigation } from "../pages/api/data/navigation";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome"
@@ -9,21 +11,9 @@ import { FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab)
 
-const navigation = [
-    {id: 1, title: 'Узи', path: "/"},
-    {id: 2, title: 'Кардиология', path: "/"},
-    {id: 3, title: 'Ренген', path: "/"},
-    {id: 4, title: 'Хириругия', path: "/"},
-    {id: 5, title: 'Ренген диагностика', path: "/"},
-    {id: 6, title: 'Стационарное лечение', path: "/"},
-    {id: 7, title: 'Контакты', path: "/"},
 
-]
 
-const location = [
-    {id: 1, adress: 'вул. Пантелеймонівська, 50', phone: '048-123-45-67'},
-    {id: 2, adress: 'вул. Маршала Говорова, 10/2', phone: '048-67-89-123'},
-]
+
 
 const Header = () => {
 
