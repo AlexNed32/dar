@@ -2,8 +2,8 @@
 
 @media (width >= 736px) {
     .services {
-        padding-left: 20px;
-        padding-right: 20px;
+        /* padding-left: 20px;
+        padding-right: 20px; */
     }
 }
 
@@ -51,6 +51,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+        padding: 0 20px;
     }
 }
 

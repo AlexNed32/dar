@@ -40,7 +40,13 @@
         grid-row: span 3;
         display: block;
         position: relative;
-        height: 30vw;
+        height: 34vw;
+    }
+}
+
+@media (width >= 1300px) {
+    .marketing_img {
+        height: 24vw;
     }
 }
 
